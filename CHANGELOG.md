@@ -3,6 +3,254 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v1.19.25
+## (2024-10-10)
+
+* patch: bump etcher-sdk to 9.1.2 [Edwin Joassart]
+
+# v1.19.24
+## (2024-10-09)
+
+* patch: etcher-util is corrupted in RPM package [Richard Glidden]
+
+# v1.19.23
+## (2024-10-09)
+
+* patch: remove gconf2 libgconf-2-4 deps [Marc-Aurèle Brothier]
+
+# v1.19.22
+## (2024-07-18)
+
+* Replace deprecated Flowzone inputs [Kyle Harding]
+
+# v1.19.21
+## (2024-05-30)
+
+* patch: fix missing windows dependency [Edwin Joassart]
+* patch: fix missing windows dependency [Edwin Joassart]
+* patch: fix missing windows dependency [Edwin Joassart]
+
+# v1.19.20
+## (2024-05-30)
+
+* patch: fix missing windows dependency [Edwin Joassart]
+
+# v1.19.19
+## (2024-05-28)
+
+* patch: add sentry debug flag [Edwin Joassart]
+
+# v1.19.18
+## (2024-05-22)
+
+* patch: fix Sentry DSN for main process [Edwin Joassart]
+
+# v1.19.17
+## (2024-05-09)
+
+* patch: fix injection of analytics key at build time [JOASSART Edwin]
+
+# v1.19.16
+## (2024-04-26)
+
+* patch: hold request for metadata while waiting for flasher [Edwin Joassart]
+
+# v1.19.15
+## (2024-04-26)
+
+* patch: bump etcher-sdk to 9.0.11 to fix url loading using http/2 [Edwin Joassart]
+
+# v1.19.14
+## (2024-04-25)
+
+* patch: pretty-bytes to 6.1.1 [JOASSART Edwin]
+
+# v1.19.13
+## (2024-04-25)
+
+* patch: use etcher icon as loading for windows installer [Edwin Joassart]
+* patch: fix windows squirrel install [Edwin Joassart]
+
+# v1.19.12
+## (2024-04-25)
+
+* patch: bump minors & patch [Edwin Joassart]
+* patch: bump @electron-forge/* to 7.4.0 [Edwin Joassart]
+* patch: bump electron to 30.0.1 & @electron/remote to 2.1.2 [Edwin Joassart]
+* patch: npm upgrade [Edwin Joassart]
+* patch: bump @balena/lint to 8.0.2 and fix formating [Edwin Joassart]
+* patch: fix pretty-bytes imports [Edwin Joassart]
+* patch: bump etcher-sdk to 9.0.9 [Edwin Joassart]
+
+# v1.19.11
+## (2024-04-25)
+
+* patch: setup wdio and port (most) tests [Edwin Joassart]
+
+# v1.19.10
+## (2024-04-23)
+
+* patch: remove node-ipc and tests [Edwin Joassart]
+* patch: switch api; use ws; integrate sudo-prompt - switch api roles flow - use websocket instead of node-ipc - integrate; modernize; simplify and deprecate sudo-prompt [Edwin Joassart]
+* patch: refactor api to use a single topic [Edwin Joassart]
+* patch: set require node engine to 20 [Edwin Joassart]
+
+# v1.19.9
+## (2024-04-22)
+
+* patch: prevent rebuild of native deps by @electron/rebuild [Edwin Joassart]
+
+# v1.19.8
+## (2024-04-22)
+
+* patch: replace deprecated pkg with yao-pkg and bump etcher-util node v to 20.10 [Edwin Joassart]
+
+# v1.19.7
+## (2024-04-22)
+
+* patch: fix formating [Edwin Joassart]
+* patch: configure prettier in the project to use balena-lint configuration [Edwin Joassart]
+
+# v1.19.6
+## (2024-04-19)
+
+* patch: fix win signature process [Edwin Joassart]
+
+# v1.19.5
+## (2024-02-14)
+
+* Replace deprecated flowzone input tests_run_on [Kyle Harding]
+
+# v1.19.4
+## (2024-01-26)
+
+* patch: remove screensaver error when not on etcher-pro [Edwin Joassart]
+* patch: fix typo in IPC server id [Edwin Joassart]
+
+# v1.19.3
+## (2023-12-22)
+
+* Update dependencies [Edwin Joassart]
+
+# v1.19.2
+## (2023-12-22)
+
+* fix: typos [Rotzbua]
+
+# v1.19.1
+## (2023-12-22)
+
+* patch: update winget-releaser v2 [Vedant]
+
+# v1.19.0
+## (2023-12-21)
+
+* Use native ARM runner for Apple Silicon builds [Akis Kesoglou]
+* Calculate and upload build artifact sha256 checksums [Akis Kesoglou]
+* Migrate build pipeline to Electron Forge [Akis Kesoglou]
+
+# v1.18.14
+## (2023-12-20)
+
+* Remove repo config from flowzone.yml [Kyle Harding]
+* Update actions/upload-artifact to v4 [Kyle Harding]
+
+# v1.18.13
+## (2023-10-16)
+
+* patch: upgrade to electron 25 [Edwin Joassart]
+* patch: refactor scanner, loader and flasher out of gui + upgrade to electron 25 [Edwin Joassart]
+
+# v1.18.12
+## (2023-07-19)
+
+* Update instructions for installing deb file [Jorge Capona]
+
+# v1.18.11
+## (2023-07-13)
+
+* fix: prevent stealing window focus from auth dialog [leadpogrommer]
+
+# v1.18.10
+## (2023-07-12)
+
+* spelling: validates [Josh Soref]
+* spelling: undefined [Josh Soref]
+* spelling: except if [Josh Soref]
+
+# v1.18.9
+## (2023-07-12)
+
+* Fix opening links from within SafeWebView [Akis Kesoglou]
+
+# v1.18.8
+## (2023-04-26)
+
+* Patch: Fix Support link [Oliver Plummer]
+
+# v1.18.7
+## (2023-04-25)
+
+* patch: update docs to remove cloudsmith install instructions for linux [Edwin Joassart]
+
+# v1.18.6
+## (2023-03-21)
+
+* add-flash-with-etcher-to-docs [Lizzie Epton]
+
+# v1.18.5
+## (2023-03-09)
+
+* patch: add apt-get update in flowzone preinstall [Edwin Joassart]
+
+# v1.18.4
+## (2023-03-02)
+
+* patch: bump etcher-sdk to 8.3.1 [JOASSART Edwin]
+
+# v1.18.3
+## (2023-02-22)
+
+* fix-typo [Lizzie Epton]
+* edits-to-info-about-efp [Lizzie Epton]
+* Add reference to etcher-efp in publishing.md [Edwin Joassart]
+
+# v1.18.2
+## (2023-02-21)
+
+* patch: organize docs [mcraa]
+* patch: actualized develop guide [mcraa]
+* patch: updated commit message guide [mcraa]
+* add-item-from-FAQs [Lizzie Epton]
+* patch: removed gt characters from contributing guide [mcraa]
+* patch: added docosaurus site name [mcraa]
+
+# v1.18.1
+## (2023-02-15)
+
+* patch: use @electron/remote for locating rpiboot files [mcraa]
+
+# v1.18.0
+## (2023-02-14)
+
+* Update to Electron 19 [Akis Kesoglou]
+* Remove Spectron and related (low-value) tests [Akis Kesoglou]
+
+# v1.17.0
+## (2023-02-14)
+
+* Update to Electron 17 and Node 16 [Akis Kesoglou]
+
+# v1.16.0
+## (2023-02-14)
+
+* Update to Electron 14 [Akis Kesoglou]
+
+# v1.15.6
+## (2023-02-13)
+
+* patch: app: i18n: Translation: Update zh-TW strings * Improve translate. * Sync layout with English strings ts file. [Edward Wu]
+
 # v1.15.5
 ## (2023-02-03)
 

@@ -15,11 +15,11 @@
  */
 
 import CircleSvg from '@fortawesome/fontawesome-free/svgs/solid/circle.svg';
-import CheckCircleSvg from '@fortawesome/fontawesome-free/svgs/solid/check-circle.svg';
-import TimesCircleSvg from '@fortawesome/fontawesome-free/svgs/solid/times-circle.svg';
-import outdent from 'outdent';
+import CheckCircleSvg from '@fortawesome/fontawesome-free/svgs/solid/circle-check.svg';
+import TimesCircleSvg from '@fortawesome/fontawesome-free/svgs/solid/circle-xmark.svg';
 import * as React from 'react';
-import { Flex, FlexProps, Link, TableColumn, Txt } from 'rendition';
+import type { FlexProps, TableColumn } from 'rendition';
+import { Flex, Link, Txt } from 'rendition';
 import styled from 'styled-components';
 
 import { progress } from '../../../../shared/messages';
@@ -139,8 +139,9 @@ export function FlashResults({
 	};
 } & FlexProps) {
 	const [showErrorsInfo, setShowErrorsInfo] = React.useState(false);
-	const allFailed = !skip && results.devices.successful === 0;
-	const someFailed = results.devices.failed !== 0 || errors.length !== 0;
+
+	const allFailed = !skip && results?.devices?.successful === 0;
+	const someFailed = results?.devices?.failed !== 0 || errors?.length !== 0;
 	const effectiveSpeed = bytesToMegabytes(getEffectiveSpeed(results)).toFixed(
 		1,
 	);
